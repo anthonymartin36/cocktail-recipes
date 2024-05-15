@@ -18,17 +18,16 @@ router.get('/', async (req, res) => {
   res.json(data.cocktails)
   })
 
-//GET http://localhost:3000/api/v1/cocktails/:cid 
-router.get('/:cid', async (req, res) => {
+//GET http://localhost:3000/api/v1/cocktails/:cId 
+router.get('/:cId', async (req, res) => {
   
-  const cid = Number(req.params.cid)
+  const cId = Number(req.params.cId)
   const data = await awaitingReadFile(file)
-  let cocktail = data.cocktails.find( ( cocktail ) => cid == cocktail.id)
+  let cocktail = data.cocktails.find( ( cocktail ) => cId == cocktail.id)
   if (cocktail === ''){
     cocktail = {title: "hello Cocktail drinker"}
   }
   try {
-    
     res.json(cocktail)
   } catch (error) {
     console.log(error)
