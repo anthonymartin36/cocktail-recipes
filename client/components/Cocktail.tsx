@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query'
 //import { useState, useEffect } from 'react'
 import { getACocktail } from '../apis/api-cocktails'
 import { Key } from 'react'
-
+import { Ingredient } from '../../models/cocktails'
 
 export default function Cocktail() {
   const { cId } = useParams()  
@@ -39,7 +39,7 @@ export default function Cocktail() {
             <div className="cocktail-details"> {cocktail.description}</div>
             <br />
             {/* <div className="cocktail-details"> {cocktail.ingredients}</div> */}
-            {cocktail && cocktail.ingredients && cocktail.ingredients.map((ingredientObj: any, index: Key) => ( 
+            {cocktail && cocktail.ingredients && cocktail.ingredients.map((ingredientObj: Ingredient, index: Key) => ( 
             <div key={index} > {ingredientObj.quantity} - {ingredientObj.ingredient}</div>
             ))}
             <div className="cocktail-details">

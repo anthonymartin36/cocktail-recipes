@@ -1,8 +1,8 @@
 import request from 'superagent'
-//import { MissingCat, NewSightedCat, SightedCat } from '../../models/cats'
+import { Cocktail } from '../../models/cocktails'
 const rootUrl = '/api/v1/cocktails/'
 
-export async function getAllCocktails() { // : Promise<MissingCat[]>
+export async function getAllCocktails() : Promise<Cocktail[]>{ 
     try {
       const response = await request.get(rootUrl)
       return response.body
@@ -11,7 +11,7 @@ export async function getAllCocktails() { // : Promise<MissingCat[]>
     }
   }
 
-  export async function getACocktail(cId: number) { // : Promise<MissingCat[]>
+  export async function getACocktail(cId: number) : Promise<Cocktail> {
     try {
       const response = await request.get(rootUrl + cId)
       return response.body

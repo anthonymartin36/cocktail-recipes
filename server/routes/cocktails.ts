@@ -4,6 +4,7 @@ import * as Path from 'node:path'
 import path from 'path'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'url'
+import { Cocktail, Data } from '../../models/cocktails'
 
 const router = Router()
 
@@ -15,7 +16,7 @@ let file = __dirname + '/../data/recipes.json'
 router.get('/', async (req, res) => {
   // console.log('File source : ' + file)
   const data = await awaitingReadFile(file)
-  res.json(data.cocktails)
+  res.json(data.cocktails )
   })
 
 //GET http://localhost:3000/api/v1/cocktails/:cId 
@@ -23,10 +24,7 @@ router.get('/:cId', async (req, res) => {
   
   const cId = Number(req.params.cId)
   const data = await awaitingReadFile(file)
-  let cocktail = data.cocktails.find( ( cocktail ) => cId == cocktail.id)
-  if (cocktail === ''){
-    cocktail = {title: "hello Cocktail drinker"}
-  }
+  let cocktail = data.cocktails.find( ( cocktail : Cocktail ) => cId == cocktail.id)
   try {
     res.json(cocktail)
   } catch (error) {
@@ -37,14 +35,13 @@ router.get('/:cId', async (req, res) => {
 
 
 
-  async function awaitingReadFile(file: string) {
-    let data = ''
+  async function awaitingReadFile(file: string): Promise<Data> {
+    let data: Data = { cocktails: [] }
     try {
       let json = await fs.readFile(file, 'utf-8')
       data = JSON.parse(json)
-      return data
-    } catch (err) {
-      console.log('Error: ' + error.message)
+    } catch (err: any) {
+      console.log('Error: ' + err.message)
     }
     return data
   }

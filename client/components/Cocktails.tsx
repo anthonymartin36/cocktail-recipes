@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { useState, useEffect } from 'react'
 import { getAllCocktails } from '../apis/api-cocktails'
-
+import { Cocktail } from '../../models/cocktails'
 
 export default function Cocktails() {
 
@@ -47,7 +47,7 @@ export default function Cocktails() {
   return (
     <header>
       <div className="cocktail-list">
-        {cocktails.map((cocktail: any) => ( 
+        {cocktails.map((cocktail: Cocktail) => ( 
           <div key={cocktail.id} > <Link className="cocktail-list-name" to={`cocktails/${cocktail.id}`} >{cocktail.title}</Link> </div>
         ))}
       </div>
