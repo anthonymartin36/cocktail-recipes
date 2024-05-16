@@ -12,7 +12,7 @@
           {"ingredient": "Salt", "quantity": "to rim glass"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. Rim the glass with salt.\n2. In a shaker, combine tequila, lime juice, triple sec, and ice.\n3. Shake well.\n4. Strain into the glass.\n5. Garnish with a lime wheel."
+        "directions": ["1. Rim the glass with salt.", "2. Stir well.", "3. Shake well.", "4. Strain into the glass.", "5. Garnish with a lime wheel."]
       },
       {
         "id": 2,
@@ -25,7 +25,7 @@
           {"ingredient": "Olives or Lemon Twist", "quantity": "for garnish"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. In a mixing glass, combine gin, vermouth, and ice.\n2. Stir well.\n3. Strain into a chilled martini glass.\n4. Garnish with olives or a lemon twist."
+        "directions": ["1. In a mixing glass, combine gin, vermouth, and ice.", "2. Stir well.", "3. Strain into a chilled martini glass.", "4. Garnish with olives or a lemon twist."]
       },
       {
         "id": 3,
@@ -39,7 +39,7 @@
           {"ingredient": "Orange Twist", "quantity": "for garnish"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. In a glass, muddle the sugar cube with bitters.\n2. Add bourbon and ice.\n3. Stir well.\n4. Garnish with an orange twist."
+        "directions": ["1. In a glass, muddle the sugar cube with bitters.", "2. Add bourbon and ice.", "Stir well.", "4. Garnish with an orange twist." ]
       },
       {
         "id": 4,
@@ -54,7 +54,7 @@
           {"ingredient": "Club Soda", "quantity": "to top"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. In a glass, muddle mint leaves, lime wedges, and simple syrup.\n2. Add rum and ice.\n3. Top with club soda.\n4. Stir gently.\n5. Garnish with a mint sprig."
+        "directions": ["1. In a glass, muddle mint leaves, lime wedges, and simple syrup.", "2. Add rum and ice.", "3. Top with club soda.", "4. Stir gently.", "5. Garnish with a mint sprig."]
       },
       {
         "id": 5,
@@ -69,7 +69,7 @@
           {"ingredient": "Lime Twist", "quantity": "for garnish"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. Fill a shaker with ice.\n2. Add vodka, triple sec, cranberry juice, and lime juice.\n3. Shake well.\n4. Strain into a chilled martini glass.\n5. Garnish with a lime twist."
+        "directions": ["1. Fill a shaker with ice.", "2. Add vodka, triple sec, cranberry juice, and lime juice.", "3. Shake well.", "4. Strain into a chilled martini glass.", "5. Garnish with a lime twist."]
       },
       {
         "id": 6,
@@ -83,7 +83,7 @@
           {"ingredient": "Orange Twist", "quantity": "for garnish"},
           {"ingredient": "Ice", "quantity": "as needed"}
         ],
-        "directions": "1. Fill a mixing glass with ice.\n2. Add gin, vermouth, and Campari.\n3. Stir well.\n4. Strain into a rocks glass filled with ice.\n5. Garnish with an orange twist."
+        "directions": ["1. Fill a mixing glass with ice.", "2. Add gin, vermouth, and Campari.", "3. Stir well.", "4. Strain into a rocks glass filled with ice.", "5. Garnish with an orange twist."]
       },
       {
         "id": 7,
@@ -97,7 +97,7 @@
           {"ingredient": "Pineapple Wedge and Cherry", "quantity": "for garnish"},
           {"ingredient": "Crushed Ice", "quantity": "as needed"}
         ],
-        "directions": "1. Blend rum, coconut cream, pineapple juice, and crushed ice until smooth.\n2. Pour into a chilled glass.\n3. Garnish with a pineapple wedge and a cherry."
+        "directions": ["1. Blend rum, coconut cream, pineapple juice, and crushed ice until smooth.", "2. Pour into a chilled glass.", "3. Garnish with a pineapple wedge and a cherry."]
       }
     ]
   }

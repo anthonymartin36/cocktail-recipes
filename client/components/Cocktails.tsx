@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import { getAllCocktails } from '../apis/api-cocktails'
 
 
-
 export default function Cocktails() {
 
   const {
@@ -49,7 +48,7 @@ export default function Cocktails() {
     <header>
       <div className="cocktail-list">
         {cocktails.map((cocktail: any) => ( 
-          <h1 className="cocktail-list-name">{cocktail.title}</h1>
+          <div key={cocktail.id} > <Link className="cocktail-list-name" to={`cocktails/${cocktail.id}`} >{cocktail.title}</Link> </div>
         ))}
       </div>
     </header>

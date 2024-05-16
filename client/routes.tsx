@@ -13,8 +13,8 @@ import {
     createRoutesFromElements(
       <>
         <Route path="/" element={<App />}>
-        <Route path="cocktails/" index element={<Cocktails />} />    
-        {/* <Route path="cocktails/:cId" element={<Cocktail />} /> */}
+        <Route path="" index element={<Cocktails />} />    
+        <Route path="cocktails/:cId" element={<Cocktail />} />
         </Route>
       </>,
     ),
