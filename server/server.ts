@@ -15,6 +15,11 @@ server.use(express.json())
 // server.set('views', Path.resolve(__dirname, 'views')) // Set the views directory
 server.use('/api/v1/cocktails', cocktails)
 
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  const envConfig = dotenv.config()
+  if (envConfig.error) throw envConfig.error
+}
+
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))
   server.use('/assets', express.static(Path.resolve('./dist/assets')))
