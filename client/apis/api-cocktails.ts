@@ -1,6 +1,6 @@
 import request from 'superagent'
 import { Cocktail } from '../../models/cocktails'
-const rootUrl = '/api/v1/cocktails/'
+const rootUrl = 'https://cocktail-z2ed.onrender.com/cocktails/'
 
 export async function getAllCocktails() : Promise<Cocktail[]>{ 
     try {
