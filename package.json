@@ -5,6 +5,14 @@
   "version": "1.0.0",
   "description": "Boilerplate - cocktail-recipes",
   "main": "server/index.ts",
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "AMartin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonymartin36/cocktail"
+  },
   "scripts": {
     "test": "vitest",
     "start": "node server/index.ts",
@@ -21,20 +29,19 @@
     "type": "git",
     "url": "git+https://github.com/anthonymartin36/cocktail.git"
   },
-  "keywords": [
-    "AMartin",
-    "boilerplate"
-  ],
-  "author": "AMartin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anthonymartin36/cocktail"
+  "eslintConfig": {
+    "extends": "@devacademy/eslint-config/react",
+    "ignorePatterns": [
+      "bundle.js"
+    ]
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1",
     "superagent": "^9.0.2",
     "tsx": "^4.0.0"
@@ -76,5 +83,10 @@
     "typescript": "^3.7.0",
     "vite": "^4.4.9",
     "vitest": "^0.34.4"
-  }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "browserslist": "> 2%, not dead"
 }

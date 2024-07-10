@@ -1,0 +1,368 @@
+{
+  "cocktails": [
+    {
+      "id": 1,
+      "title": "Margarita",
+      "description": "A classic cocktail made with tequila, lime juice, and orange liqueur.",
+      "image": "margarita.jpg",
+      "ingredients": [
+        {"ingredient": "Tequila", "quantity": "2 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1 oz"},
+        {"ingredient": "Triple Sec", "quantity": "1 oz"},
+        {"ingredient": "Salt", "quantity": "to rim glass"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Rim the glass with salt.", "2. Stir well.", "3. Shake well.", "4. Strain into the glass.", "5. Garnish with a lime wheel."]
+    },
+    {
+      "id": 2,
+      "title": "Martini",
+      "description": "A classic cocktail made with gin and vermouth, garnished with an olive or a twist.",
+      "image": "martini.jpg",
+      "ingredients": [
+        {"ingredient": "Gin", "quantity": "2 oz"},
+        {"ingredient": "Dry Vermouth", "quantity": "1/2 oz"},
+        {"ingredient": "Olives or Lemon Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. In a mixing glass, combine gin, vermouth, and ice.", "2. Stir well.", "3. Strain into a chilled martini glass.", "4. Garnish with olives or a lemon twist."]
+    },
+    {
+      "id": 3,
+      "title": "Old Fashioned",
+      "description": "A timeless cocktail made with bourbon, sugar, and bitters.",
+      "image": "old_fashioned.jpg",
+      "ingredients": [
+        {"ingredient": "Bourbon", "quantity": "2 oz"},
+        {"ingredient": "Sugar Cube", "quantity": "1"},
+        {"ingredient": "Angostura Bitters", "quantity": "2 dashes"},
+        {"ingredient": "Orange Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. In a glass, muddle the sugar cube with bitters.", "2. Add bourbon and ice.", "Stir well.", "4. Garnish with an orange twist." ]
+    },
+    {
+      "id": 4,
+      "title": "Mojito",
+      "description": "A refreshing Cuban cocktail made with rum, mint, lime, sugar, and soda water.",
+      "image": "mojito.jpg",
+      "ingredients": [
+        {"ingredient": "White Rum", "quantity": "2 oz"},
+        {"ingredient": "Fresh Mint Leaves", "quantity": "8-10"},
+        {"ingredient": "Lime", "quantity": "1"},
+        {"ingredient": "Simple Syrup", "quantity": "1 oz"},
+        {"ingredient": "Club Soda", "quantity": "to top"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. In a glass, muddle mint leaves, lime wedges, and simple syrup.", "2. Add rum and ice.", "3. Top with club soda.", "4. Stir gently.", "5. Garnish with a mint sprig."]
+    },
+    {
+      "id": 5,
+      "title": "Cosmopolitan",
+      "description": "A popular cocktail made with vodka, triple sec, cranberry juice, and lime juice.",
+      "image": "cosmopolitan.jpg",
+      "ingredients": [
+        {"ingredient": "Vodka", "quantity": "1 1/2 oz"},
+        {"ingredient": "Triple Sec", "quantity": "1 oz"},
+        {"ingredient": "Cranberry Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Lime Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add vodka, triple sec, cranberry juice, and lime juice.", "3. Shake well.", "4. Strain into a chilled martini glass.", "5. Garnish with a lime twist."]
+    },
+    {
+      "id": 6,
+      "title": "Negroni",
+      "description": "A classic Italian cocktail made with gin, vermouth, and Campari.",
+      "image": "negroni.jpg",
+      "ingredients": [
+        {"ingredient": "Gin", "quantity": "1 oz"},
+        {"ingredient": "Sweet Vermouth", "quantity": "1 oz"},
+        {"ingredient": "Campari", "quantity": "1 oz"},
+        {"ingredient": "Orange Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a mixing glass with ice.", "2. Add gin, vermouth, and Campari.", "3. Stir well.", "4. Strain into a rocks glass filled with ice.", "5. Garnish with an orange twist."]
+    },
+    {
+      "id": 7,
+      "title": "Pina Colada",
+      "description": "A tropical cocktail made with rum, coconut cream, and pineapple juice.",
+      "image": "pina_colada.jpg",
+      "ingredients": [
+        {"ingredient": "White Rum", "quantity": "2 oz"},
+        {"ingredient": "Coconut Cream", "quantity": "2 oz"},
+        {"ingredient": "Pineapple Juice", "quantity": "3 oz"},
+        {"ingredient": "Pineapple Wedge and Cherry", "quantity": "for garnish"},
+        {"ingredient": "Crushed Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Blend rum, coconut cream, pineapple juice, and crushed ice until smooth.", "2. Pour into a chilled glass.", "3. Garnish with a pineapple wedge and a cherry."]
+    },
+    {
+      "id": 8,
+      "title": "Whiskey Sour",
+      "description": "A classic cocktail made with whiskey, lemon juice, and simple syrup.",
+      "image": "whiskey_sour.jpg",
+      "ingredients": [
+        {"ingredient": "Whiskey", "quantity": "2 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "3/4 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Cherry", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add whiskey, lemon juice, and simple syrup.", "3. Shake well.", "4. Strain into a rocks glass filled with ice.", "5. Garnish with a cherry."]
+    },
+    {
+      "id": 9,
+      "title": "Daiquiri",
+      "description": "A refreshing cocktail made with rum, lime juice, and simple syrup.",
+      "image": "daiquiri.jpg",
+      "ingredients": [
+        {"ingredient": "White Rum", "quantity": "2 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "3/4 oz"},
+        {"ingredient": "Lime Wheel", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add rum, lime juice, and simple syrup.", "3. Shake well.", "4. Strain into a chilled cocktail glass.", "5. Garnish with a lime wheel."]
+    },
+    {
+      "id": 10,
+      "title": "Manhattan",
+      "description": "A sophisticated cocktail made with whiskey, vermouth, and bitters.",
+      "image": "manhattan.jpg",
+      "ingredients": [
+        {"ingredient": "Rye Whiskey", "quantity": "2 oz"},
+        {"ingredient": "Sweet Vermouth", "quantity": "1 oz"},
+        {"ingredient": "Angostura Bitters", "quantity": "2 dashes"},
+        {"ingredient": "Cherry", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a mixing glass with ice.", "2. Add whiskey, vermouth, and bitters.", "3. Stir well.", "4. Strain into a chilled cocktail glass.", "5. Garnish with a cherry."]
+    },
+    {
+      "id": 11,
+      "title": "Mint Julep",
+      "description": "A refreshing cocktail made with bourbon, mint, sugar, and water.",
+      "image": "mint_tulip.jpg",
+      "ingredients": [
+        {"ingredient": "Bourbon", "quantity": "2 oz"},
+        {"ingredient": "Fresh Mint Leaves", "quantity": "8-10"},
+        {"ingredient": "Sugar", "quantity": "1 tsp"},
+        {"ingredient": "Water", "quantity": "2 tsp"},
+        {"ingredient": "Mint Sprig", "quantity": "for garnish"},
+        {"ingredient": "Crushed Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. In a glass, muddle mint leaves, sugar, and water.", "2. Fill the glass with crushed ice.", "3. Add bourbon.", "4. Stir well until the glass is frosty.", "5. Garnish with a mint sprig."]
+    },
+    {
+      "id": 12,
+      "title": "Mai Tai",
+      "description": "A tropical cocktail made with rum, lime juice, orgeat syrup, and orange liqueur.",
+      "image": "mai_tai.jpg",
+      "ingredients": [
+        {"ingredient": "Light Rum", "quantity": "1 oz"},
+        {"ingredient": "Dark Rum", "quantity": "1 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1 oz"},
+        {"ingredient": "Orgeat Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Orange Liqueur", "quantity": "1/2 oz"},
+        {"ingredient": "Mint Sprig and Lime Wheel", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add light rum, lime juice, orgeat syrup, and orange liqueur.", "3. Shake well.", "4. Strain into a rocks glass filled with ice.", "5. Float dark rum on top.", "6. Garnish with a mint sprig and lime wheel."]
+    },
+    {
+      "id": 13,
+      "title": "Tom Collins",
+      "description": "A classic cocktail made with gin, lemon juice, sugar, and soda water.",
+      "image": "tom_collins.jpg",
+      "ingredients": [
+        {"ingredient": "Gin", "quantity": "2 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "1 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Club Soda", "quantity": "to top"},
+        {"ingredient": "Lemon Wheel and Cherry", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add gin, lemon juice, and simple syrup.", "3. Shake well.", "4. Strain into a tall glass filled with ice.", "5. Top with club soda.", "6. Garnish with a lemon wheel and cherry."]
+    },
+    {
+      "id": 14,
+      "title": "French 75",
+      "description": "A sophisticated cocktail made with gin, lemon juice, sugar, and champagne.",
+      "image": "french_75.jpg",
+      "ingredients": [
+        {"ingredient": "Gin", "quantity": "1 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Champagne", "quantity": "to top"},
+        {"ingredient": "Lemon Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add gin, lemon juice, and simple syrup.", "3. Shake well.", "4. Strain into a champagne flute.", "5. Top with champagne.", "6. Garnish with a lemon twist."]
+    },
+    {
+      "id": 15,
+      "title": "Bloody Mary",
+      "description": "A savory cocktail made with vodka, tomato juice, and various spices and flavorings.",
+      "image": "bloody_mary.jpg",
+      "ingredients": [
+        {"ingredient": "Vodka", "quantity": "2 oz"},
+        {"ingredient": "Tomato Juice", "quantity": "4 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Worcestershire Sauce", "quantity": "2 dashes"},
+        {"ingredient": "Hot Sauce", "quantity": "2 dashes"},
+        {"ingredient": "Salt and Pepper", "quantity": "to taste"},
+        {"ingredient": "Celery Stick and Lemon Wedge", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add vodka, tomato juice, lemon juice, Worcestershire sauce, hot sauce, salt, and pepper.", "3. Roll the shaker back and forth gently to mix.", "4. Strain into a tall glass filled with ice.", "5. Garnish with a celery stick and lemon wedge."]
+    },
+    {
+      "id": 16,
+      "title": "Moscow Mule",
+      "description": "A refreshing cocktail made with vodka, ginger beer, and lime juice.",
+      "image": "moscow_mule.jpg",
+      "ingredients": [
+        {"ingredient": "Vodka", "quantity": "2 oz"},
+        {"ingredient": "Ginger Beer", "quantity": "4 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Lime Wedge", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a copper mug with ice.", "2. Add vodka and lime juice.", "3. Top with ginger beer.", "4. Stir gently.", "5. Garnish with a lime wedge."]
+    },
+    {
+      "id": 17,
+      "title": "Pisco Sour",
+      "description": "A South American cocktail made with pisco, lime juice, simple syrup, and egg white.",
+      "image": "pisco_sour.jpg",
+      "ingredients": [
+        {"ingredient": "Pisco", "quantity": "2 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "3/4 oz"},
+        {"ingredient": "Egg White", "quantity": "1"},
+        {"ingredient": "Angostura Bitters", "quantity": "2-3 drops"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add pisco, lime juice, simple syrup, and egg white.", "3. Shake vigorously until frothy.", "4. Strain into a chilled glass.", "5. Add 2-3 drops of Angostura bitters on top."]
+    },
+    {
+      "id": 18,
+      "title": "Sidecar",
+      "description": "A classic cocktail made with cognac, orange liqueur, and lemon juice.",
+      "image": "sidecar.jpg",
+      "ingredients": [
+        {"ingredient": "Cognac", "quantity": "2 oz"},
+        {"ingredient": "Orange Liqueur", "quantity": "1 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "3/4 oz"},
+        {"ingredient": "Orange Twist", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add cognac, orange liqueur, and lemon juice.", "3. Shake well.", "4. Strain into a chilled cocktail glass.", "5. Garnish with an orange twist."]
+    },
+    {
+      "id": 19,
+      "title": "Aperol Spritz",
+      "description": "A refreshing Italian cocktail made with Aperol, Prosecco, and soda water.",
+      "image": "aperol_spritz.jpg",
+      "ingredients": [
+        {"ingredient": "Aperol", "quantity": "3 oz"},
+        {"ingredient": "Prosecco", "quantity": "3 oz"},
+        {"ingredient": "Soda Water", "quantity": "1 oz"},
+        {"ingredient": "Orange Slice", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a wine glass with ice.", "2. Add Aperol and Prosecco.", "3. Top with soda water.", "4. Stir gently.", "5. Garnish with an orange slice."]
+    },
+    {
+      "id": 20,
+      "title": "Dark 'n' Stormy",
+      "description": "A Caribbean cocktail made with dark rum and ginger beer.",
+      "image": "dark_n_stormy.jpg",
+      "ingredients": [
+        {"ingredient": "Dark Rum", "quantity": "2 oz"},
+        {"ingredient": "Ginger Beer", "quantity": "4 oz"},
+        {"ingredient": "Lime Wedge", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a highball glass with ice.", "2. Add dark rum.", "3. Top with ginger beer.", "4. Stir gently.", "5. Garnish with a lime wedge."]
+    },
+    {
+      "id": 21,
+      "title": "Paloma",
+      "description": "A refreshing Mexican cocktail made with tequila, lime juice, and grapefruit soda.",
+      "image": "paloma.jpg",
+      "ingredients": [
+        {"ingredient": "Tequila", "quantity": "2 oz"},
+        {"ingredient": "Lime Juice", "quantity": "1/2 oz"},
+        {"ingredient": "Grapefruit Soda", "quantity": "to top"},
+        {"ingredient": "Lime Wedge", "quantity": "for garnish"},
+        {"ingredient": "Salt", "quantity": "to rim glass"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Rim the glass with salt.", "2. Fill the glass with ice.", "3. Add tequila and lime juice.", "4. Top with grapefruit soda.", "5. Stir gently.", "6. Garnish with a lime wedge."]
+    },
+    {
+      "id": 23,
+      "title": "Sazerac",
+      "description": "A classic New Orleans cocktail made with rye whiskey, absinthe, sugar, and bitters.",
+      "image": "sazerac.jpg",
+      "ingredients": [
+        {"ingredient": "Rye Whiskey", "quantity": "2 oz"},
+        {"ingredient": "Absinthe", "quantity": "1/4 oz"},
+        {"ingredient": "Sugar Cube", "quantity": "1"},
+        {"ingredient": "Peychaud's Bitters", "quantity": "3 dashes"},
+        {"ingredient": "Lemon Peel", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Rinse a chilled glass with absinthe and discard the excess.", "2. In a mixing glass, muddle the sugar cube with bitters.", "3. Add rye whiskey and ice.", "4. Stir well.", "5. Strain into the prepared glass.", "6. Garnish with a lemon peel."]
+    },
+    {
+      "id": 24,
+      "title": "Gin Fizz",
+      "description": "A refreshing cocktail made with gin, lemon juice, sugar, and soda water.",
+      "image": "gin_fizz.jpg",
+      "ingredients": [
+        {"ingredient": "Gin", "quantity": "2 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "1 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Club Soda", "quantity": "to top"},
+        {"ingredient": "Lemon Wheel", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add gin, lemon juice, and simple syrup.", "3. Shake well.", "4. Strain into a tall glass filled with ice.", "5. Top with club soda.", "6. Garnish with a lemon wheel."]
+    },
+    {
+      "id": 25,
+      "title": "Caipirinha",
+      "description": "A Brazilian cocktail made with cachaça, lime, and sugar.",
+      "image": "caipirinha.jpg",
+      "ingredients": [
+        {"ingredient": "Cachaça", "quantity": "2 oz"},
+        {"ingredient": "Lime", "quantity": "1"},
+        {"ingredient": "Sugar", "quantity": "2 tsp"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Cut the lime into 8 wedges.", "2. In a glass, muddle the lime wedges with sugar.", "3. Fill the glass with ice.", "4. Add cachaça.", "5. Stir well."]
+    },
+    {
+      "id": 26,
+      "title": "Amaretto Sour",
+      "description": "A sweet and sour cocktail made with amaretto, lemon juice, and simple syrup.",
+      "image": "amaretto_sour.jpg",
+      "ingredients": [
+        {"ingredient": "Amaretto", "quantity": "1 1/2 oz"},
+        {"ingredient": "Lemon Juice", "quantity": "1 oz"},
+        {"ingredient": "Simple Syrup", "quantity": "1/2 oz"},
+        {"ingredient": "Cherry and Orange Slice", "quantity": "for garnish"},
+        {"ingredient": "Ice", "quantity": "as needed"}
+      ],
+      "directions": ["1. Fill a shaker with ice.", "2. Add amaretto, lemon juice, and simple syrup.", "3. Shake well.", "4. Strain into a rocks glass filled with ice.", "5. Garnish with a cherry and an orange slice."]
+    }
+  ]
+}
+    
+
+

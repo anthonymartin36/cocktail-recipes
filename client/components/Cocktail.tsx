@@ -1,54 +1,72 @@
-import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import Footer from './Footer.tsx'
+import Nav from './Navbar.tsx'
+import {Link,  useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
-//import { useState, useEffect } from 'react'
-import { getACocktail } from '../apis/api-cocktails'
-import { Key } from 'react'
-import { Ingredient } from '../../models/cocktails'
+import { getACocktailApi } from '../apis/api-cocktails.ts'
+import './Cocktail.css'
 
-export default function Cocktail() {
-  const { cId } = useParams()  
+const imageUrl = import.meta.env.VITE_IMAGE_URL
+
+function Cocktail() {
+  const { cId } = useParams()
+
   const {
-        data: cocktail,
-        isLoading,
-        isError,
-      } = useQuery({
-        queryKey: ['cocktail'],
-        queryFn: () => {
-          return getACocktail(Number(cId))
-        },
-      })
-      if (isError) {
-        return (
-          <div className="Error">
-            <h1 className="loading-heading">Something's broken!</h1>
-          </div>
-        )
-      }
-      if (!cocktail || isLoading) { //|| !loadingTimePassed 
-        return (
-          <div className="Loading">
-            <h1 className="loading-heading">Just a Sec!!</h1>
-          </div>
-        )
-      }
+    data: cocktail,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: ['cocktail', cId],
+    queryFn: () => getACocktailApi(Number(cId)),
+  })
+
+  if (isError) {
     return (
-    <header>
-     <div className="Working">
-            <h1 key={cocktail.id} className="cocktail-heading">{cocktail.title}</h1>
-            <div className="cocktail-details"> {cocktail.description}</div>
-            <br />
-            {/* <div className="cocktail-details"> {cocktail.ingredients}</div> */}
-            {cocktail && cocktail.ingredients && cocktail.ingredients.map((ingredientObj: Ingredient, index: Key) => ( 
-            <div key={index} > {ingredientObj.quantity} - {ingredientObj.ingredient}</div>
-            ))}
-            <div className="cocktail-details">
-            <br />
-             {cocktail && cocktail.directions && cocktail.directions.map((directionArr: String, index: Key) => (
-              <div key={index} > {directionArr}</div>
-            ))}
-            </div>
-          </div>
-    </header>
+    <><Nav />
+      <div className="loading" id="loading">
+      <div className='content'>
+        <h1 className="loading-heading">Something's broken!</h1>
+      </div>
+      </div>
+      <Footer /></>
+    )
+  }
+
+  if (!cocktail || isLoading) {
+    return (
+      <><Nav />
+      <div className="loading" id="loading">
+      <div className='content'>
+        <h1 className="loading-heading">Just a Sec!!</h1>
+        <p> This site may take 20 seconds to warm up! Please wait ... </p>
+      </div>
+      </div>
+      <Footer /></>
+    )
+  }
+    return (
+      <>
+        <Nav />
+        <div className='cocktail' id='cocktail'>
+        <div className='container' id='container'>
+        <div className='content' key={cocktail.id}>
+        <Link to='/cocktail'>Back to Cocktails</Link>
+        <h2>Cocktail :   { cocktail.title } </h2> 
+        <p>Description : { cocktail.description } </p>
+        <p><img src={`${imageUrl}${cocktail.image}`} alt={cocktail.description}/> </p>
+        <h4>Ingredients</h4>
+        {cocktail.ingredients.map((ingredient: any, index: any) => (
+        <p key={index}>{index + 1}: <Link to={`${ingredient.ingredient}`}>{ingredient.ingredient}</Link> Quantity: {ingredient.quantity}</p>
+        ))}
+        <h4>Directions</h4>
+        {cocktail.directions.map((directions: any, index: any) => (
+        <p key={index}>Step: {directions}</p>
+        ))}
+        </div>
+        </div>
+        </div>
+        <Footer />
+      </>
     )
 }
+
+export default Cocktail
