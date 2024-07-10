@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "vitest",
-    "start": "node server/index.ts",
+    "start": "node server/index.js",
     "dev": "run-p dev:client dev:server",
     "dev:client": "vite",
     "dev:server": "tsx watch server/index.ts",
