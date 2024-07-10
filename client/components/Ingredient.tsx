@@ -50,7 +50,7 @@ function Ingredient() {
       <div className='cocktail' id='cocktail'>
       <div className='container' id='container'>
       <div className='content' >
-      <Link to='/cocktail'>Back to Cocktails</Link>
+      <Link to='/'>Back to Cocktails</Link>
       <h2>Cocktails containing :  { ingredient } </h2> 
 
       {cocktail.map((index: any) => (

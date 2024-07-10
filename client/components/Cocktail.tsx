@@ -49,7 +49,7 @@ function Cocktail() {
         <div className='cocktail' id='cocktail'>
         <div className='container' id='container'>
         <div className='content' key={cocktail.id}>
-        <Link to='/cocktail'>Back to Cocktails</Link>
+        <Link to='/'>Back to Cocktails</Link>
         <h2>Cocktail :   { cocktail.title } </h2> 
         <p>Description : { cocktail.description } </p>
         <p><img src={`${imageUrl}${cocktail.image}`} alt={cocktail.description}/> </p>

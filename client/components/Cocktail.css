@@ -18,11 +18,17 @@
     text-align: left;
 }
 
+.cocktail p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2rem 0;
+}
+
 .cocktail img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 350px;
+    width: 250px;
     float: right;
   }
 
@@ -30,17 +36,18 @@
     float: left;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 2px;
-    width: 70px;
-    height: 100px;
+    padding: 5px;
+    width: 100px;
+    height: 125px;
   }
   
   .cocktails img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
 
-.cocktail p {
+.cocktails p {
     padding: 35px;
+    height: 130px;
   }
 
 .cocktail button {
