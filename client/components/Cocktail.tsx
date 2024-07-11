@@ -48,7 +48,7 @@ function Cocktail() {
         <Nav />
         <div className='cocktail' id='cocktail'>
         <div className='container' id='container'>
-        <div className='content' key={cocktail.id}>
+        <div className='content' id='content'>
         <Link to='/'>Back to Cocktails</Link>
         <h2>Cocktail :   { cocktail.title } </h2> 
         <p>Description : { cocktail.description } </p>

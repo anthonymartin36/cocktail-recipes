@@ -1,11 +1,11 @@
 import request from 'superagent'
 import { Cocktail } from '../../models/cocktails'
-const rootUrl = import.meta.env.VITE_API_URL //|| 'http://localhost:5173/api/v1/cocktails/'
-//'https://cocktail-z2ed.onrender.com/api/v1/cocktails/'
+const rootUrl = '/api/v1/cocktails'//import.meta.env.VITE_API_URL 
 
 export async function getAllCocktailsApi() : Promise<Cocktail[]>{ 
     try {
       const response = await request.get(rootUrl)
+      console.log('String', request.get(rootUrl))
       return response.body
     } catch (error) {
       throw console.error('Error fetching missing cocktails', error)
@@ -14,7 +14,7 @@ export async function getAllCocktailsApi() : Promise<Cocktail[]>{
 
   export async function getACocktailApi(cId: number) : Promise<Cocktail> {
     try {
-      const response = await request.get(rootUrl + cId)
+      const response = await request.get(`${rootUrl}/${cId}`)
       return response.body
     } catch (error) {
         console.error(`Error fetching cocktail with id ${cId}: `, error)
