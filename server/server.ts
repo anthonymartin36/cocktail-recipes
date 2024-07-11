@@ -19,8 +19,9 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))
-  server.use('/image', express.static(Path.resolve('server/image')))
   server.use('/assets', express.static(Path.resolve('./dist/assets')))
+  server.use('/image', express.static('server/image'))
+  server.use('/data', express.static('server/data'))
   server.get('*', (req, res) => {
     res.sendFile(Path.resolve('./dist/index.html'))
   })
