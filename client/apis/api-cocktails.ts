@@ -5,7 +5,6 @@ const rootUrl = '/api/v1/cocktails'//import.meta.env.VITE_API_URL
 export async function getAllCocktailsApi() : Promise<Cocktail[]>{ 
     try {
       const response = await request.get(rootUrl)
-      console.log('String', request.get(rootUrl))
       return response.body
     } catch (error) {
       throw console.error('Error fetching missing cocktails', error)
