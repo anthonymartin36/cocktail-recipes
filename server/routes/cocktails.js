@@ -3,16 +3,20 @@ import { Router } from 'express'
 import path from 'path'
 import fs from 'node:fs/promises'
 import { fileURLToPath } from 'url'
+import * as dotenv from 'dotenv'
+
+dotenv.config()
 
 const router = Router()
+let DATA_URL = process.env.DATA_URL
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-let file = __dirname + '/../data/recipes.json'
+let file = __dirname + DATA_URL
 
 // http://localhost:3000/api/v1/cocktails
 router.get('/', async (req, res) => {
-  // console.log('File source : ' + file)
+  console.log('File source : ', DATA_URL)
   const data = await awaitingReadFile(file)
   res.json(data.cocktails )
   })
