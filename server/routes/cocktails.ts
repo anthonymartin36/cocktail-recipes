@@ -5,6 +5,8 @@ import fs from 'node:fs/promises'
 import { fileURLToPath } from 'url'
 import * as dotenv from 'dotenv'
 
+import {Cocktail, Ingredient} from '../../models/cocktails'
+
 dotenv.config()
 
 const router = Router()
@@ -16,7 +18,7 @@ let file = __dirname + DATA_URL
 
 // http://localhost:3000/api/v1/cocktails
 router.get('/', async (req, res) => {
-  console.log('File source : ', DATA_URL)
+  //console.log('File source : ', DATA_URL)
   const data = await awaitingReadFile(file)
   res.json(data.cocktails )
   })
@@ -26,7 +28,7 @@ router.get('/:cId', async (req, res) => {
   
   const cId = Number(req.params.cId)
   const data = await awaitingReadFile(file)
-  let cocktail = data.cocktails.find( ( cocktail  ) => cId == cocktail.id)
+  let cocktail = data.cocktails.find( ( cocktail: Cocktail ) => cId == cocktail.id)
   try {
     res.json(cocktail)
   } catch (error) {
@@ -44,19 +46,19 @@ router.get('/filter/:ingredient', async (req, res) => {
 
   //console.log("ingredient : ", ingredient)
   //filters through ingredients, checks type of ingredient
-  let results = cocktails.filter((cocktail) => {
+  let results = cocktails.filter((cocktail: Cocktail) => {
     //return true if matches
     //one of the ingredients' types has to match
     //get the ingredient of the recipe and stick into a variable
   let currentIngredients = cocktail.ingredients
     //map through the ingredients
     //create array of only the ingredient name
-    currentIngredients = currentIngredients.map((ingredientObj) => {
+    let ingredientNames = currentIngredients.map((ingredientObj: Ingredient) => {
       return ingredientObj.ingredient.toLocaleLowerCase()
     })
     //checks if the ingredient is in that list
     //returns true if it is
-    return currentIngredients.includes(ingredient)
+    return ingredientNames.includes(ingredient)
   })
   try {
     res.json(results)
@@ -66,13 +68,13 @@ router.get('/filter/:ingredient', async (req, res) => {
   }
 })
 
-  async function awaitingReadFile(file) {
+  async function awaitingReadFile(file: any) {
     let data
     try {
       let json = await fs.readFile(file, 'utf-8')
       data = JSON.parse(json)
-    } catch (err) {
-      console.log('Error: ' + err.message)
+    } catch (err ) {
+      console.log('Error: ' + (err as Error).message)
     }
     return data
   }
