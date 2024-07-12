@@ -16,9 +16,10 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 let file = __dirname + '/../data/recipes.json' //DATA_URL
 
+console.log('File source : ', file)
+
 // http://localhost:3000/api/v1/cocktails
 router.get('/', async (req, res) => {
-  console.log('File source : ', file)
   const data = await awaitingReadFile(file)
   console.log('File source : ', data)
   res.json(data.cocktails )
